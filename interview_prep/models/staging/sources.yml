@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: "Raw TPCH data from Snowflake's free sample dataset"
+    database: snowflake_sample_data
+    schema: tpch_sf1
+    tables:
+      - name: orders
+        description: "All customer orders"
+      - name: lineitem
+        description: "Order line items"
+      - name: customer
+        description: "Customer master data"
+      - name: part
+        description: "Product/part catalog"
+      - name: supplier
+        description: "Supplier master data"
+      - name: partsupp
+        description: "Part-supplier relationships (cost to source a part from a supplier)"
+      - name: nation
+        description: "Country reference data"
+      - name: region
+        description: "Region reference data"
